@@ -25,7 +25,7 @@ const App = () => {
 
   const fetchCategories = async () => {
     try {
-      const response = await axios.get('http://localhost:3000/api/cards');
+      const response = await axios.get('https://help-center-api.onrender.com/api/cards');
       setCategories(response.data);
     } catch (error) {
       console.error('Error fetching categories:', error);
